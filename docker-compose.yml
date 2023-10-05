@@ -5,7 +5,7 @@ services:
     container_name: docker-postgres-springboot-app
     environment:
       - POSTGRES_HOST=docker-postgres-springboot-db
-      - SERVER_PORT=8085
+      - SERVER_PORT=8091
       - SPRING_DATASOURCE_URL=jdbc:postgresql://postgresDb:5432/postgres
       - SPRING_DATASOURCE_USERNAME=postgres
       - SPRING_DATASOURCE_PASSWORD=Blastotron@5211
