@@ -1,7 +1,7 @@
 version: "3"
 services:
   springBootApp:
-    image: njktemp0/midproject:1.0
+    image: njktemp0/mproj:1.0
     container_name: docker-postgres-springboot-app
     environment:
       - POSTGRES_HOST=docker-postgres-springboot-db
