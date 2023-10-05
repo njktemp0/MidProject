@@ -5,6 +5,12 @@ services:
     container_name: docker-postgres-springboot-app
     environment:
       - POSTGRES_HOST=docker-postgres-springboot-db
+      - SERVER_PORT=8085
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://postgresDb:5432/postgres
+      - SPRING_DATASOURCE_USERNAME=postgres
+      - SPRING_DATASOURCE_PASSWORD=Blastotron@5211
+      - SPRING_JPA_PROPERTIES_HIBERNATE_DIALECT=org.hibernate.dialect.PostgreSQLDialect
+      - SPRING_JPA_HIBERNATE_DDL_AUTO=update
     ports:
       - "8091:8085"
     networks:
